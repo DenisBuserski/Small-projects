@@ -21,18 +21,21 @@ You can check my version of Caesar cipher [here](https://github.com/DenisBusersk
 ##
 
 
-
 ### Print number from 1 to 100
-How to print the number from 1 to 100 without using any numbers. You can check my siple solution [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Print-numbers-from-1-to-100.txt)
+How to print the numbers from 1 to 100 without using any numbers. You can check my siple solution [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Print-numbers-from-1-to-100.txt)
 
 ##
+
+
+### Print number of pairs of parentheses
+
+##
+
 
 ### Change value of 2 integers
 
 ##
 
-### Print number of pairs of parentheses
 
-##
 
 
