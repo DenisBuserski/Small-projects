@@ -4,12 +4,13 @@
 ### Ceasar Cipher
 In cryptography, the Caesar cipher is one of the simplest and most widely known encryption techniques. To learn more about it check - [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher). My version of the Caesar cipher takes as an input the word you want to encrypt and a number by which, we will move the letters. If the new position points to a number bigger than the alphabet size, the counter starts from the begging.
 
-Example:
+Example 1:
 - Input: abcd
 - Number: 3
 - Output: defg
-- Explanation: 
+- Explanation:
 
+Example 2:
 - Input: zzzywx
 - Number: 4
 - Output: dddcab
