@@ -35,9 +35,13 @@ Example:
 - Output:
 
   ( ( () ) )
+  
   () () ()
+  
   () ( () )
+  
   ( () ) ()
+  
   ( () () )
 
 
@@ -47,7 +51,13 @@ To check my solution click [here](https://github.com/DenisBuserski/Small-Program
 
 
 ### Change value of 2 integers
-How to change the replace the value of 2 integers, without using a 3th variable. 
+How to replace the value of 2 integers, without using a 3th variable. 
+
+Example:
+- Input: a = 10; b = 15
+- Output: a = 15; b = 10;
+
+You can check my solution [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Change-value-of-2-integers.txt).
 ##
 
 
