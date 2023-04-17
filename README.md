@@ -34,15 +34,15 @@ Example:
 - Input: 3
 - Output:
 
-  ((()))
+  ( ( () ) )
   
-  ()()()
+  () () ()
   
-  ()(())
+  () ( () )
   
-  (())()
+  ( () ) ()
   
-  (()())
+  ( () () )
 
 
 To check my solution click [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Print-number-of-pairs-of-parentheses.txt).
