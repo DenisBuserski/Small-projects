@@ -22,7 +22,7 @@ You can check my version of Caesar cipher [here](https://github.com/DenisBusersk
 
 
 ### Print number from 1 to 100
-How to print the numbers from 1 to 100 without using any numbers. You can check my siple solution [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Print-numbers-from-1-to-100.txt)
+How to print the numbers from 1 to 100 without using any numbers. You can check my simple solution [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Print-numbers-from-1-to-100.txt)
 
 ##
 
@@ -35,13 +35,9 @@ Example:
 - Output:
 
   ( ( () ) )
-  
   () () ()
-  
   () ( () )
-  
   ( () ) ()
-  
   ( () () )
 
 
@@ -51,7 +47,7 @@ To check my solution click [here](https://github.com/DenisBuserski/Small-Program
 
 
 ### Change value of 2 integers
-
+How to change the replace the value of 2 integers, without using a 3th variable. 
 ##
 
 
