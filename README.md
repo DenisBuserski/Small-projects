@@ -1,4 +1,4 @@
-# Small-Programs
+# Small programs
 
 
 ### Ceasar Cipher
