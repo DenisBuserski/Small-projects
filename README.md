@@ -8,7 +8,8 @@ Example:
 - Input: abcd
 - Number: 3
 - Output:
-- Explanation
+- Explanation:
+
 You can check my version of Caesar cipher [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/CaesarCipher.java).
 
 ##
