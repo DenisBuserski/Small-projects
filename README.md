@@ -8,7 +8,7 @@ Example 1:
 - Input: abcd
 - Number: 3
 - Output: defg
-- Explanation:
+- Explanation: The first letter "a" is at position 1. When we sum 1 + 3 = 4, and "d" is the 4th letter in the english alphabet. The same applies to "b" -> 2 + 3 = 5 -> "3"; "c" -> 3 + 3 = 6 -> "f"; "d" -> 4 + 3 = 7 -> "g"
 
 Example 2:
 - Input: zzzywx
