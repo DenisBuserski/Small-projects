@@ -28,6 +28,19 @@ How to print the numbers from 1 to 100 without using any numbers. You can check 
 
 
 ### Print number of pairs of parentheses
+Simple solution on how to print all posible combinations of opened and closed brackets. The program takes as an input the number of opened and closed brackets and prints all combinations.
+
+Example:
+- Input: 3
+- Output:
+  ((()))
+  ()()()
+  ()(())
+  (())()
+  (()())
+
+
+To check my solution click [here](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Print-number-of-pairs-of-parentheses.txt).
 
 ##
 
