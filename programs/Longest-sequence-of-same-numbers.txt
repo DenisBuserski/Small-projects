@@ -1,4 +1,4 @@
-public class Main {
+public class Longest-sequence-of-same-numbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // 1,3,3,1,1,1,4,4,2,2,2,2,5,5,5,2,2,2,3
