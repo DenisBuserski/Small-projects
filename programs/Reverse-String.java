@@ -13,8 +13,8 @@ public class Reverse-String {
 
         
         String name = scanner.nextLine();
-        // Последна позиция = Дължина на текста - 1
-        // Denis -> 01234 -> 5 - 1 = 4 -> Последен символ
+        // Last position = String length - 1
+        // Denis -> 01234 -> 5 - 1 = 4 -> Last symbol
         
         String reverse = " ";
         for (int i = name.length() - 1; i >= 0; i--) {
