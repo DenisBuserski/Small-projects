@@ -3,6 +3,10 @@ package org.example;
 import org.example.logmanipulator.Log1;
 import org.example.logmanipulator.Log2;
 import org.example.logmanipulator.LogManipulator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -17,9 +21,11 @@ import java.util.List;
 import java.util.Properties;
 import java.util.Scanner;
 
+
 public class Application {
     public static void main(String[] args) throws IOException {
-        List<String> result = new ArrayList<>();
+
+        List<String> result;
 
         Scanner scanner = new Scanner(System.in);
         String task = scanner.nextLine();
@@ -37,19 +43,19 @@ public class Application {
             default:
                 throw new FileNotFoundException("No files found!");
         }
-        
-        // Outlook email configuration
-        String smtpHost = "outlook.office365.com";
-        String sender = "java_test_d@outlook.com";
-        String password = "123456789Test";
 
-        // Recipient's email address
-        String recipient = "denis.buserski@gmail.com";
+//        // Outlook email configuration
+//        String smtpHost = "outlook.office365.com";
+//        String sender = "java_test_d@outlook.com";
+//        String password = "123456789Test";
+//
+//        // Recipient's email address
+//        String recipient = "denis.buserski@gmail.com";
 
         Properties properties = new Properties();
         properties.put("mail.store.protocol", "imaps");
-        properties.put("mail.imaps.host", smtpHost);
-        properties.put("mail.imaps.port", "993");
+        properties.put("mail.imaps.host", EmailConfiguration.getSmtpHost());
+        properties.put("mail.imaps.port", "587");
         properties.put("mail.smtp.starttls.enable", "true");
         properties.put("mail.smtp.starttls.required", "true");
 
@@ -59,9 +65,9 @@ public class Application {
         try {
             // Create a message
             Message message = new MimeMessage(session);
-            InternetAddress internetAddressSender = new InternetAddress(sender);
+            InternetAddress internetAddressSender = new InternetAddress(EmailConfiguration.getSender());
             message.setFrom(internetAddressSender);
-            InternetAddress internetAddressReceiver = new InternetAddress(recipient);
+            InternetAddress internetAddressReceiver = new InternetAddress(EmailConfiguration.getRecipient());
             message.setRecipient(Message.RecipientType.TO, internetAddressReceiver);
             message.setSubject("Invalid logins");
 
@@ -74,7 +80,12 @@ public class Application {
 
             // Connect and authenticate recipient the SMTP server
             Transport transport = session.getTransport("smtp");
-            transport.connect(smtpHost, 587, sender, password);
+            transport.connect(
+                    EmailConfiguration.getSmtpHost(),
+                    EmailConfiguration.getPort(),
+                    EmailConfiguration.getSender(),
+                    EmailConfiguration.getPassword()
+            );
 
             // Send the email
             transport.sendMessage(message, message.getAllRecipients());
@@ -86,6 +97,7 @@ public class Application {
         } catch (MessagingException exception) {
             exception.printStackTrace();
         }
+
 
 
     }
