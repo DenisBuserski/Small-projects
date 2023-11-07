@@ -71,12 +71,12 @@ public class Application {
             message.setRecipient(Message.RecipientType.TO, internetAddressReceiver);
             message.setSubject("Invalid logins");
 
-            StringBuilder msg = new StringBuilder();
-            msg.append("We have found ").append(result.size()).append(" logins. Please find below the usernames that were not able to login:").append("\n");
+            StringBuilder messageBuilder = new StringBuilder();
+            messageBuilder.append("We have found ").append(result.size()).append(" logins. Please find below the usernames that were not able to login:").append("\n");
             for (String s : result) {
-                msg.append(s).append("\n");
+                messageBuilder.append(s).append("\n");
             }
-            message.setText(msg.toString());
+            message.setText(messageBuilder.toString());
 
             // Connect and authenticate recipient the SMTP server
             Transport transport = session.getTransport("smtp");
