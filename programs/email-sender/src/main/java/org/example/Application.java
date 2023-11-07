@@ -44,6 +44,8 @@ public class Application {
                 throw new FileNotFoundException("No files found!");
         }
 
+        
+
 //        // Outlook email configuration
 //        String smtpHost = "outlook.office365.com";
 //        String sender = "java_test_d@outlook.com";
@@ -52,51 +54,51 @@ public class Application {
 //        // Recipient's email address
 //        String recipient = "denis.buserski@gmail.com";
 
-        Properties properties = new Properties();
-        properties.put("mail.store.protocol", "imaps");
-        properties.put("mail.imaps.host", EmailConfiguration.getSmtpHost());
-        properties.put("mail.imaps.port", "587");
-        properties.put("mail.smtp.starttls.enable", "true");
-        properties.put("mail.smtp.starttls.required", "true");
-
-        // Create a mail session
-        Session session = Session.getDefaultInstance(properties, null);
-
-        try {
-            // Create a message
-            Message message = new MimeMessage(session);
-            InternetAddress internetAddressSender = new InternetAddress(EmailConfiguration.getSender());
-            message.setFrom(internetAddressSender);
-            InternetAddress internetAddressReceiver = new InternetAddress(EmailConfiguration.getRecipient());
-            message.setRecipient(Message.RecipientType.TO, internetAddressReceiver);
-            message.setSubject("Invalid logins");
-
-            StringBuilder messageBuilder = new StringBuilder();
-            messageBuilder.append("We have found ").append(result.size()).append(" logins. Please find below the usernames that were not able to login:").append("\n");
-            for (String s : result) {
-                messageBuilder.append(s).append("\n");
-            }
-            message.setText(messageBuilder.toString());
-
-            // Connect and authenticate recipient the SMTP server
-            Transport transport = session.getTransport("smtp");
-            transport.connect(
-                    EmailConfiguration.getSmtpHost(),
-                    EmailConfiguration.getPort(),
-                    EmailConfiguration.getSender(),
-                    EmailConfiguration.getPassword()
-            );
-
-            // Send the email
-            transport.sendMessage(message, message.getAllRecipients());
-
-            // Close the transport
-            transport.close();
-
-            System.out.println("Email sent successfully!");
-        } catch (MessagingException exception) {
-            exception.printStackTrace();
-        }
+//        Properties properties = new Properties();
+//        properties.put("mail.store.protocol", "imaps");
+//        properties.put("mail.imaps.host", EmailConfiguration.getSmtpHost());
+//        properties.put("mail.imaps.port", "587");
+//        properties.put("mail.smtp.starttls.enable", "true");
+//        properties.put("mail.smtp.starttls.required", "true");
+//
+//        // Create a mail session
+//        Session session = Session.getDefaultInstance(properties, null);
+//
+//        try {
+//            // Create a message
+//            Message message = new MimeMessage(session);
+//            InternetAddress internetAddressSender = new InternetAddress(EmailConfiguration.getSender());
+//            message.setFrom(internetAddressSender);
+//            InternetAddress internetAddressReceiver = new InternetAddress(EmailConfiguration.getRecipient());
+//            message.setRecipient(Message.RecipientType.TO, internetAddressReceiver);
+//            message.setSubject("Invalid logins");
+//
+//            StringBuilder messageBuilder = new StringBuilder();
+//            messageBuilder.append("We have found ").append(result.size()).append(" logins. Please find below the usernames that were not able to login:").append("\n");
+//            for (String s : result) {
+//                messageBuilder.append(s).append("\n");
+//            }
+//            message.setText(messageBuilder.toString());
+//
+//            // Connect and authenticate recipient the SMTP server
+//            Transport transport = session.getTransport("smtp");
+//            transport.connect(
+//                    EmailConfiguration.getSmtpHost(),
+//                    EmailConfiguration.getPort(),
+//                    EmailConfiguration.getSender(),
+//                    EmailConfiguration.getPassword()
+//            );
+//
+//            // Send the email
+//            transport.sendMessage(message, message.getAllRecipients());
+//
+//            // Close the transport
+//            transport.close();
+//
+//            System.out.println("Email sent successfully!");
+//        } catch (MessagingException exception) {
+//            exception.printStackTrace();
+//        }
 
 
 
