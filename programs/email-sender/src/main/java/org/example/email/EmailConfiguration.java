@@ -1,4 +1,4 @@
-package org.example;
+package org.example.email;
 
 public class EmailConfiguration {
     private static final String smtpHost = "outlook.office365.com";

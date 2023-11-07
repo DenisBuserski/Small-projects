@@ -1,6 +1,6 @@
 package org.example.messagepreparation;
 
-import org.example.EmailConfiguration;
+import org.example.email.EmailConfiguration;
 
 import javax.mail.Message;
 import javax.mail.MessagingException;

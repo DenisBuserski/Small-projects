@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.email.EmailConfiguration;
+import org.example.email.EmailPreparation;
 import org.example.logmanipulator.Log1;
 import org.example.logmanipulator.Log2;
 import org.example.logmanipulator.LogManipulator;
@@ -7,9 +9,6 @@ import org.example.logmanipulator.LogManipulator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
