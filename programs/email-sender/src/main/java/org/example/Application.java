@@ -40,8 +40,8 @@ public class Application {
         
         // Outlook email configuration
         String smtpHost = "outlook.office365.com";
-        String sender = "test@outlook.com";
-        String password = "**********";
+        String sender = "java_test_d@outlook.com";
+        String password = "123456789Test";
 
         // Recipient's email address
         String recipient = "denis.buserski@gmail.com";
