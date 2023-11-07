@@ -27,5 +27,5 @@ public class EmailConfiguration {
     public static int getPort() {
         return port;
     }
-    
+
 }
