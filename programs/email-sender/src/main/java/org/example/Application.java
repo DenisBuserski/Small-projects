@@ -36,7 +36,6 @@ public class Application {
         // Create a mail session
         Session session = Session.getDefaultInstance(properties, null);
 
-
         List<String> result;
 
         Scanner scanner = new Scanner(System.in);

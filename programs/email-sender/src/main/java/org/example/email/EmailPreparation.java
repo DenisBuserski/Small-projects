@@ -13,7 +13,6 @@ import java.util.List;
 
 public class EmailPreparation {
 
-
     public static Message prepareMessage(Session session, List<String> result, String caseNumber) throws MessagingException {
         // Create a message
         switch (caseNumber) {
@@ -47,6 +46,5 @@ public class EmailPreparation {
         transport.close();
 
         System.out.println("Email sent successfully!");
-
     }
 }
