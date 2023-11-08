@@ -61,5 +61,43 @@ You can check my solution click [here](https://github.com/DenisBuserski/Small-Pr
 ##
 
 
+### Timer
+
+[Link](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Timer.java)
+
+##
+
+
+### Reverse String
+
+[Link](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Reverse-String.java)
+
+##
+
+
+### Reverse Integer
+
+[Link](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Reverse-Integer.java)
+
+##
+
+
+### Longest sequence of same numbers
+
+[Link](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Longest-sequence-of-same-numbers.txt)
+
+##
+
+
+### Conways game of life
+
+[Link](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Conways_Game_Of_Life.java)
+
+##
+
+
+
+
+
 
 
