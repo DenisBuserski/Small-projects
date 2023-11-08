@@ -68,10 +68,14 @@ You can check my solution click [here](https://github.com/DenisBuserski/Small-Pr
 
 ### Reverse String
 
+[Link](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Reverse-String.java)
+
 ##
 
 
 ### Reverse Integer
+
+[Link](https://github.com/DenisBuserski/Small-Programs/blob/main/programs/Reverse-Integer.java)
 
 ##
 
