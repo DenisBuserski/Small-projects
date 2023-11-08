@@ -61,5 +61,28 @@ You can check my solution click [here](https://github.com/DenisBuserski/Small-Pr
 ##
 
 
+### Timer
+
+##
+
+
+### Reverse String
+
+##
+
+
+### Reverse Integer
+
+##
+
+
+### Longest sequence of same numbers
+
+##
+
+
+
+
+
 
 
