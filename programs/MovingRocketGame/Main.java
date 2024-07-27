@@ -1,4 +1,4 @@
-package Drag_Drop_Images;
+package MovingRocketGame;
 
 public class Main {
     public static void main(String[] args) {

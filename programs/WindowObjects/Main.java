@@ -1,4 +1,4 @@
-package Drag_Drop_Images;
+package WindowObjects;
 
 public class Main {
     public static void main(String[] args) {

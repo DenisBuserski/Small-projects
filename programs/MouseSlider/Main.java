@@ -1,7 +1,7 @@
-package Drag_Drop_Images;
+package MouseSlider;
 
 public class Main {
     public static void main(String[] args) {
-        new MyFrame();
+        new Slider();
     }
 }
