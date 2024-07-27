@@ -1,11 +1,12 @@
 public class Conways_Game_Of_Life {
     public static void main(String[] args) {
-
-        // Test 1
-//        int[][] matrix = new int[][]{
-//                {1, 1},
-//                {1, 0},
-//        };
+        /*
+        Test 1
+        int[][] matrix = new int[][]{
+                {1, 1},
+                {1, 0},
+        };
+         */
 
         // Test 2
         int[][] matrix = new int[][]{ 

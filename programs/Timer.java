@@ -1,8 +1,6 @@
-package bg.softuni;
-
 import java.util.*;
 
-public class Main {
+public class Timer {
     public static void main(String[] args) {
 
         Timer timer = new Timer();

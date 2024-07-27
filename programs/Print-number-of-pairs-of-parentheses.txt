@@ -1,3 +1,19 @@
+### Simple solution on how to print all possible combinations of opened and closed brackets.
+### The program takes as an input the number of opened and closed brackets and prints all combinations.
+### Example:
+### - Input: 3
+### - Output:
+###
+###   ( ( () ) )
+###
+###   () () ()
+###
+###   () ( () )
+###
+###   ( () ) ()
+###
+###   ( () () )
+
 int n = Integer.parseInt(scanner.nextLine());
 
 basicPrint(n, "("); // (((
