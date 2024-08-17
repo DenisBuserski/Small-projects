@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration debug="true" scan="true" scanPeriod="30 seconds">
+    <!--
+    It can include global settings for the entire application
+    TODO: configuration element
+    -->
+
+    <!--    <property name="COLOR_RED" value="\u001B[31m" />-->
+    <!--    <property name="LOG_CONSOLE_PATTERN" value="%d{HH:mm:ss.SSS} [%t] %highlight(%level){'\u001B[31m', '\u001B[33m', '\u001B[32m'} %lo On line %line %highlight(DENIS){'\u001B[31m'} - %msg%n"/>-->
+    <property name="LOG_CONSOLE_PATTERN"
+              value="%d{HH:mm:ss.SSS} [%t] %highlight(%level){FATAL=red, ERROR=red, WARN=yellow, INFO=green, DEBUG=blue, TRACE=blue} - %msg%n"/>
+    <!--
+    %d - Date and time
+    %t - Thread name
+    %level / %le / %p - Log level
+    %logger / %c / %lo- Logger name
+    %line - The line of the Log
+    %msg - Log message
+    %n - Line separator
+
+    -->
+    <property name="LOG_FILE_PATTERN" value="%d{HH:mm:ss.SSS} [%t] %level %logger{0} DENIS - %msg%n"/>
+    <property name="LOG_PATH" value="./logger-demo/logs"/>
+    <property name="LOG_ARCHIVE" value="${LOG_PATH}/archive"/>
+
+    <timestamp key="timestamp-by-second" datePattern="yyyy-MM-dd_HH-mm-ss"/>
+
+
+    <!-- Appenders define where log messages should be sent -->
+    <!-- Defines individual appenders, which specify where log messages should be sent -->
+    <appender name="Console-Appender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_CONSOLE_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="File-Appender" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_PATH}/logfile-${timestamp-by-second}.log</file>
+        <encoder>
+            <pattern>${LOG_FILE_PATTERN}</pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+    </appender>
+
+    <!-- TODO: Email appender -->
+
+
+    <!--
+    Define the configuration for the root logger. The root logger is the ancestor of all loggers in the
+    logger hierarchy. Any log statement that does not match a more specific logger will be handled by the
+    root logger. If I make a second root(Example root level="ERROR") it will override root level="INFO".
+    Can be overridden by more specific logger configurations.
+    -->
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="Console-Appender"/>-->
+<!--        <appender-ref ref="File-Appender"/>-->
+<!--    </root>-->
+
+    <!--
+    Configure the log level and appender for each logger
+    OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL
+    If the logging level is set to WARN, it will capture WARN, ERROR, and FATAL
+    -->
+    <logger name="com.logger.Runner" level="INFO">
+        <appender-ref ref="Console-Appender"/>
+    </logger>
+
+    <logger name="com.logger.MyService" level="INFO">
+        <appender-ref ref="File-Appender"/>
+    </logger>
+
+
+
+
+</configuration>
