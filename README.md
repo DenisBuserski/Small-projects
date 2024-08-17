@@ -1,4 +1,4 @@
-# Small programs
+# Small projects & exercises
 
 
 
