@@ -1,0 +1,16 @@
+Task:
+
+Implement a small executable Java application to read in a csv file and process its data by applying different calculations.
+Your code should work for different data sets. Two different example data sets are provided (ExampleData_1.csv and ExampleData_2.csv).
+Design your application on your preference, but your code should include the following functionality:
+
+1. Read in the content of the csv data file.
+2. Parse the content of the csv data file.
+3. Process the data and do separate calculations of the mean and the median of the values in column named 'Result'.   
+3.1.  (Optionally) Implement the calculation logic in a way, that the user of your classes is able to dynamically add additional calculation types.
+4. Output all the result from #3 to standard out (console).
+
+
+
+
+
