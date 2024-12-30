@@ -11,14 +11,19 @@ import java.time.LocalDate;
 public class Book {
     @Id
     private String id;
+    
     private String author;
+    
     private String title;
 
     @Enumerated(value = EnumType.STRING)
     private Genre genre;
+    
     private BigDecimal price;
+    
     @Column(name = "publish_date")
     private LocalDate publishDate;
+    
     private String description;
 
     public Book() {}
